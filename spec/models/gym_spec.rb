@@ -8,4 +8,8 @@ RSpec.describe Gym do
     it {should validate_presence_of :lat}
     it {should validate_presence_of :lon}
   end
+
+  describe "relationships" do
+    it {should have_many :posts}
+  end
 end

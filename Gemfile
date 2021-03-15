@@ -36,6 +36,7 @@ group :development, :test do
   gem 'graphql', '~> 1.9'
   gem 'rspec-rails', '~> 4.1.0'
   gem 'travis'
+  gem 'pry'
 end
 
 group :development do

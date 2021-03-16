@@ -8,6 +8,8 @@ script:
 - bundle exec rspec
 deploy:
   provider: heroku
+  api_key:
+    secure: HEROKU_DEPLOY_KEY
   app: https://git.heroku.com/getbelayed.git
   on:
     branch: main

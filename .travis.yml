@@ -9,4 +9,6 @@ script:
 deploy:
   provider: heroku
   app: https://git.heroku.com/getbelayed.git
+  on:
+    branch: main
   run: rails db:migrate

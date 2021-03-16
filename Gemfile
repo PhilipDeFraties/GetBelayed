@@ -30,11 +30,11 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'rubocop', require: false
 gem 'graphql', '~> 1.9'
 gem 'factory_bot_rails'
+gem 'faker'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara'
-  gem 'faker'
   gem 'json'
   gem 'launchy'
   gem 'pry'

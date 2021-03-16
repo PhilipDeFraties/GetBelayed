@@ -31,9 +31,13 @@ gem 'rubocop', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'capybara'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'graphql', '~> 1.9'
+  gem 'json'
+  gem 'launchy'
+  gem 'pry'
   gem 'rspec-rails', '~> 4.1.0'
   gem 'travis'
 end
@@ -48,6 +52,7 @@ group :development do
 end
 
 group :test do
+  gem 'database_cleaner-active_record'
   gem 'shoulda-matchers'
 end
 

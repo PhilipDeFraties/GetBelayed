@@ -13,7 +13,6 @@ module Types
           [Types::UserType],
           null: false,
           description: 'Returns a list of users'
-
     def users
       User.all
     end

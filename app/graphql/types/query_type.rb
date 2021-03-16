@@ -2,7 +2,6 @@
 
 module Types
   class QueryType < Types::BaseObject
-    skip_before_action :verify_authenticity_token
     # Add `node(id: ID!) and `nodes(ids: [ID!]!)`
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField

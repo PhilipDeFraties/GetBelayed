@@ -11,6 +11,8 @@ type Mutation {
 }
 
 type Query {
+  user(id: ID!): User!
+
   """
   Returns a list of users
   """

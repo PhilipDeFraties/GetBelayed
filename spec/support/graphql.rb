@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module GraphQLHelpers
   def controller
     @controller ||= GraphqlController.new.tap do |obj|
@@ -8,7 +10,7 @@ module GraphQLHelpers
   def execute_graphql(query, **kwargs)
     GetBelayedSchema.execute(
       query,
-      { context: { controller: controller } }.merge(kwargs),
+      { context: { controller: controller } }.merge(kwargs)
     )
   end
 end

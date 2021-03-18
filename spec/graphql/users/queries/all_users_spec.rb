@@ -17,7 +17,6 @@ RSpec.describe Types::QueryType, type: :request do
     GQL
 
     users = FactoryBot.create_list(:user, 3)
-
     post '/graphql', params: { query: query_string }
 
     expect(response.status).to eq(200)

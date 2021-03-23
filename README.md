@@ -27,3 +27,23 @@ Fetch single user by id:
   }
 }
 ```
+
+Create User:
+
+```
+mutation {
+  createUser(input: {
+    firstName: "Phil",
+    lastName: "DeFraties",
+    email: "fake@email.com"
+  }) {
+    user {
+      id
+      firstName
+      lastName
+      email
+    }
+    errors
+  }
+}
+```

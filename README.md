@@ -1,6 +1,6 @@
 # Queries
 
-Fetch all users:
+###Fetch all users:
 
 ``` 
 { 
@@ -14,7 +14,7 @@ Fetch all users:
 }
 ```
 
-Fetch single user by id:
+###Fetch single user by id:
 
 ```
 {
@@ -28,7 +28,7 @@ Fetch single user by id:
 }
 ```
 
-Create User:
+###Create User:
 
 ```
 mutation {
@@ -45,5 +45,22 @@ mutation {
     }
     errors
   }
+}
+```
+Returns: 
+
+```
+
+    "data": {
+        "createUser": {
+            "user": {
+                "id": "26",
+                "firstName": "Phil",
+                "lastName": "DeFraties",
+                "email": "fake@email.com"
+            },
+            "errors": []
+        }
+    }
 }
 ```

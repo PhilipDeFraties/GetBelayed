@@ -1,6 +1,6 @@
 # Queries
 
-###Fetch all users:
+## Fetch all users:
 
 ``` 
 { 
@@ -14,7 +14,7 @@
 }
 ```
 
-###Fetch single user by id:
+## Fetch single user by id:
 
 ```
 {
@@ -28,7 +28,7 @@
 }
 ```
 
-###Create User:
+## Create User:
 
 ```
 mutation {

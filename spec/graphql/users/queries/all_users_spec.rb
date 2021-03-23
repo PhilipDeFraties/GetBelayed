@@ -11,7 +11,6 @@ RSpec.describe Types::QueryType, type: :request do
           firstName
           lastName
           email
-          gender
         }
       }
     GQL
@@ -42,9 +41,6 @@ RSpec.describe Types::QueryType, type: :request do
       expect(user_info).to have_key(:email)
       expect(user_info[:email]).to be_a(String)
       expect(user_info[:email]).to eq(users[index].email)
-      expect(user_info).to have_key(:gender)
-      expect(user_info[:gender]).to be_a(String)
-      expect(user_info[:gender]).to eq(users[index].gender)
     end
   end
 end

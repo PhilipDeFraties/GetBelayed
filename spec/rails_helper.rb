@@ -78,12 +78,10 @@ RSpec.configure do |config|
     DatabaseCleaner.clean_with(:truncation)
   end
 
-  config.before(:each, :database) do
-    # open transaction
-    DatabaseCleaner.start
+  config.around(:each) do |example|
+    DatabaseCleaner.cleaning do
+      example.run
+    end
   end
 
-  config.after(:each, :database) do
-    DatabaseCleaner.clean
-  end
 end

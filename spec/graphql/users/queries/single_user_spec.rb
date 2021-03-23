@@ -6,12 +6,11 @@ RSpec.describe Types::QueryType, type: :request do
   it 'loads single user' do
     query_string = <<~GQL
       query {
-        user(id: 4) {
+        user(id: 6) {
           id
           firstName
           lastName
           email
-          gender
         }
       }
     GQL
@@ -40,8 +39,5 @@ RSpec.describe Types::QueryType, type: :request do
     expect(json[:data][:user]).to have_key(:email)
     expect(json[:data][:user][:email]).to be_a(String)
     expect(json[:data][:user][:email]).to eq(user.email)
-    expect(json[:data][:user]).to have_key(:gender)
-    expect(json[:data][:user][:gender]).to be_a(String)
-    expect(json[:data][:user][:gender]).to eq(user.gender)
   end
 end

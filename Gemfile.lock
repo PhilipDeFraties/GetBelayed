@@ -135,7 +135,8 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.6)
     method_source (1.0.0)
-    mimemagic (0.3.6)
+    mimemagic (0.3.8)
+      nokogiri (~> 1)
     mini_mime (1.0.2)
     minitest (5.14.4)
     msgpack (1.4.2)
@@ -303,7 +304,7 @@ DEPENDENCIES
   json
   launchy
   listen (~> 3.3)
-  mimemagic (= 0.3.6)
+  mimemagic (= 0.3.8)
   pg (~> 1.1)
   pry
   puma (~> 5.0)

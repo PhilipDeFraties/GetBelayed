@@ -38,6 +38,9 @@ type Mutation {
 }
 
 type Query {
+  """
+  Find a user by ID
+  """
   user(id: ID!): User!
 
   """
